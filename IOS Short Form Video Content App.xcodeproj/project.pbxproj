@@ -14,6 +14,7 @@
 		1B87D0B22C2F31460072A225 /* IOS_Short_Form_Video_Content_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B87D0B12C2F31460072A225 /* IOS_Short_Form_Video_Content_AppTests.swift */; };
 		1B87D0BC2C2F31460072A225 /* IOS_Short_Form_Video_Content_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B87D0BB2C2F31460072A225 /* IOS_Short_Form_Video_Content_AppUITests.swift */; };
 		1B87D0BE2C2F31460072A225 /* IOS_Short_Form_Video_Content_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B87D0BD2C2F31460072A225 /* IOS_Short_Form_Video_Content_AppUITestsLaunchTests.swift */; };
+		1B87D0E12C2F48250072A225 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B87D0E02C2F48250072A225 /* MainTabView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,7 @@
 		1B87D0B72C2F31460072A225 /* IOS Short Form Video Content AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "IOS Short Form Video Content AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B87D0BB2C2F31460072A225 /* IOS_Short_Form_Video_Content_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IOS_Short_Form_Video_Content_AppUITests.swift; sourceTree = "<group>"; };
 		1B87D0BD2C2F31460072A225 /* IOS_Short_Form_Video_Content_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IOS_Short_Form_Video_Content_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		1B87D0E02C2F48250072A225 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,8 +97,12 @@
 		1B87D09E2C2F313F0072A225 /* IOS Short Form Video Content App */ = {
 			isa = PBXGroup;
 			children = (
-				1B87D09F2C2F313F0072A225 /* IOS_Short_Form_Video_Content_AppApp.swift */,
-				1B87D0A12C2F313F0072A225 /* ContentView.swift */,
+				1B87D0D42C2F46D50072A225 /* Services */,
+				1B87D0D32C2F46C70072A225 /* Extensions */,
+				1B87D0D22C2F46BF0072A225 /* Core */,
+				1B87D0D12C2F46BB0072A225 /* Models */,
+				1B87D0D02C2F46B60072A225 /* Utils */,
+				1B87D0CF2C2F46900072A225 /* App */,
 				1B87D0A32C2F31450072A225 /* Assets.xcassets */,
 				1B87D0A52C2F31450072A225 /* IOS_Short_Form_Video_Content_App.entitlements */,
 				1B87D0A62C2F31450072A225 /* Preview Content */,
@@ -127,6 +133,131 @@
 				1B87D0BD2C2F31460072A225 /* IOS_Short_Form_Video_Content_AppUITestsLaunchTests.swift */,
 			);
 			path = "IOS Short Form Video Content AppUITests";
+			sourceTree = "<group>";
+		};
+		1B87D0CF2C2F46900072A225 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				1B87D09F2C2F313F0072A225 /* IOS_Short_Form_Video_Content_AppApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		1B87D0D02C2F46B60072A225 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		1B87D0D12C2F46BB0072A225 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		1B87D0D22C2F46BF0072A225 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				1B87D0DF2C2F47E70072A225 /* Authentication */,
+				1B87D0DE2C2F47CC0072A225 /* UploadingMedia */,
+				1B87D0DD2C2F47C20072A225 /* TabBar */,
+				1B87D0DC2C2F47B60072A225 /* Search */,
+				1B87D0DA2C2F478B0072A225 /* Root */,
+				1B87D0D92C2F477C0072A225 /* Profile */,
+				1B87D0D82C2F47770072A225 /* Notifications */,
+				1B87D0D72C2F47740072A225 /* Feed */,
+				1B87D0D62C2F47450072A225 /* Comments */,
+				1B87D0D52C2F47430072A225 /* Components */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		1B87D0D32C2F46C70072A225 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		1B87D0D42C2F46D50072A225 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		1B87D0D52C2F47430072A225 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		1B87D0D62C2F47450072A225 /* Comments */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Comments;
+			sourceTree = "<group>";
+		};
+		1B87D0D72C2F47740072A225 /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Feed;
+			sourceTree = "<group>";
+		};
+		1B87D0D82C2F47770072A225 /* Notifications */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Notifications;
+			sourceTree = "<group>";
+		};
+		1B87D0D92C2F477C0072A225 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		1B87D0DA2C2F478B0072A225 /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				1B87D0A12C2F313F0072A225 /* ContentView.swift */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		1B87D0DC2C2F47B60072A225 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		1B87D0DD2C2F47C20072A225 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				1B87D0E02C2F48250072A225 /* MainTabView.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		1B87D0DE2C2F47CC0072A225 /* UploadingMedia */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UploadingMedia;
+			sourceTree = "<group>";
+		};
+		1B87D0DF2C2F47E70072A225 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Authentication;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,6 +392,7 @@
 			files = (
 				1B87D0A22C2F313F0072A225 /* ContentView.swift in Sources */,
 				1B87D0A02C2F313F0072A225 /* IOS_Short_Form_Video_Content_AppApp.swift in Sources */,
+				1B87D0E12C2F48250072A225 /* MainTabView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

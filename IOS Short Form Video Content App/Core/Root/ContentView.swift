@@ -8,13 +8,9 @@
 import SwiftUI
 
 struct ContentView: View {
+    // new group shortcut -> cmd + opt + N
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
-        }
+        MainTabView()
         .padding()
     }
 }
